@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on Sat 07 Aug 2021 21:53:03 by Eclipse SUMO GUI Version v1_8_0+1611-230a699a21
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="/home/seanh/Code/mcts_intersections/data/2x4_intersection_tls.net.xml"/>
+        <route-files value="/home/seanh/Code/mcts_intersections/data/2x4_intersection.rou.xml"/>
+    </input>
+
+    <output>
+        <tripinfo-output value="../out/tripinfo.xml"/>
+        <collision-output value="../out/collisions.xml"/>
+        <statistic-output value="../out/statistics.xml"/>
+    </output>
+
+    <traci_server>
+        <remote-port value="60053"/>
+    </traci_server>
+
+</configuration>
+-->
+
+<statistics xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/statistic_file.xsd">
+    <vehicles loaded="50" inserted="50" running="0" waiting="0"/>
+    <teleports total="0" jam="0" yield="0" wrongLane="0"/>
+    <safety collisions="0" emergencyStops="0"/>
+    <persons loaded="0" running="0" jammed="0"/>
+    <vehicleTripStatistics routeLength="2006.61" speed="11.53" duration="176.04" waitingTime="12.96" timeLoss="30.29" departDelay="14.36" departDelayWaiting="-1"/>
+    <pedestrianStatistics number="0" routeLength="0.00" duration="0.00" timeLoss="0.00"/>
+    <rideStatistics number="0"/>
+    <transportStatistics number="0"/>
+</statistics>

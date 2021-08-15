@@ -1,0 +1,40 @@
+intersection_coords: [0, 0]
+max_simulation_steps: 1000
+mcts_time: 2000  # mcts time budget in ms
+
+sumo_binary: "/usr/bin/sumo-gui"
+sumo_cfg: "../data/2x4_intersection.sumocfg"
+
+trip_info_out: "../out/tripinfo.xml"
+collisions_out: "../out/collisions.xml"
+statistics_out: "../out/statistics.xml"
+
+passing_order_fcfs: "fcfs"
+passing_order_mcts: "mcts"
+passing_order_mode: "mcts"
+
+num_vehicles: 50
+num_routes: 8
+colliding_routes: [[0, 4], [0, 6], [0, 7], [1, 4], [2, 4], [2, 6], [2, 5], [3, 6]]
+
+# https://sumo.dlr.de/docs/TraCI/Change_Vehicle_State.html#speed_mode_0xb3
+veh_mode: 32  # no checks enabled
+veh_safe_mode: 32
+
+veh_speed_default: 13.88  # ~50km/h
+veh_speed_adjust: 8.88  # -5m/s
+veh_speed_intersection: 6.94  # ~25km/h
+
+veh_state_default: "sumo"
+veh_state_control: "control"
+veh_state_intersection: "intersection"
+
+zone_control_size: 500
+zone_intersection_size: 100
+
+collision_distance_thresh: 20  # needs tuning
+
+veh_col_white: [255, 255, 255]  # default behaviour
+veh_col_green: [0, 165, 0]      # in control zone
+veh_col_orange: [255, 165, 0]   # adjusting trajectory
+veh_col_grey: [120, 120, 120]   # intersection traversal

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on Thu 11 Mar 2021 16:24:25 by Eclipse SUMO GUI Version v1_8_0+1611-230a699a21
+-->
+
+<configuration>
+
+    <input>
+        <net-file value="/home/seanh/Code/mcts_intersections/data/2x4_intersection_tls.net.xml"/>
+        <route-files value="/home/seanh/Code/mcts_intersections/data/2x4_intersection.rou.xml"/>
+    </input>
+
+</configuration>

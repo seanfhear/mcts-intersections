@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on Sat 07 Aug 2021 21:39:52 by Eclipse SUMO netedit Version v1_8_0+1611-230a699a21
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <sumo-net-file value="/home/seanh/Code/mcts_intersections/data/2x4_intersection_tls.net.xml"/>
+    </input>
+
+    <output>
+        <output-file value="/home/seanh/Code/mcts_intersections/data/2x4_intersection_tls.net.xml"/>
+    </output>
+
+    <processing>
+        <geometry.min-radius.fix.railways value="false"/>
+        <geometry.max-grade.fix value="false"/>
+        <offset.disable-normalization value="true"/>
+        <lefthand value="false"/>
+    </processing>
+
+    <junctions>
+        <no-turnarounds value="true"/>
+        <junctions.corner-detail value="5"/>
+        <junctions.limit-turn-speed value="5.5"/>
+        <rectangular-lane-cut value="false"/>
+    </junctions>
+
+    <pedestrian>
+        <walkingareas value="false"/>
+    </pedestrian>
+
+    <report>
+        <aggregate-warnings value="5"/>
+    </report>
+
+</configuration>
+-->
+
+<net version="1.9" junctionCornerDetail="5" limitTurnSpeed="5.50" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/net_file.xsd">
+
+    <location netOffset="0.00,0.00" convBoundary="-1000.00,-1000.00,1000.00,1000.00" origBoundary="-10000000000.00,-10000000000.00,10000000000.00,10000000000.00" projParameter="!"/>
+
+    <edge id=":intersection_0" function="internal">
+        <lane id=":intersection_0_0" index="0" speed="6.51" length="9.03" shape="-1.60,7.20 -1.95,4.75 -3.00,3.00 -4.75,1.95 -7.20,1.60"/>
+    </edge>
+    <edge id=":intersection_1" function="internal">
+        <lane id=":intersection_1_0" index="0" speed="14.00" length="14.40" shape="-1.60,7.20 -1.60,-7.20"/>
+    </edge>
+    <edge id=":intersection_2" function="internal">
+        <lane id=":intersection_2_0" index="0" speed="6.51" length="9.03" shape="7.20,1.60 4.75,1.95 3.00,3.00 1.95,4.75 1.60,7.20"/>
+    </edge>
+    <edge id=":intersection_3" function="internal">
+        <lane id=":intersection_3_0" index="0" speed="14.00" length="14.40" shape="7.20,1.60 -7.20,1.60"/>
+    </edge>
+    <edge id=":intersection_4" function="internal">
+        <lane id=":intersection_4_0" index="0" speed="6.51" length="9.03" shape="1.60,-7.20 1.95,-4.75 3.00,-3.00 4.75,-1.95 7.20,-1.60"/>
+    </edge>
+    <edge id=":intersection_5" function="internal">
+        <lane id=":intersection_5_0" index="0" speed="14.00" length="14.40" shape="1.60,-7.20 1.60,7.20"/>
+    </edge>
+    <edge id=":intersection_6" function="internal">
+        <lane id=":intersection_6_0" index="0" speed="6.51" length="9.03" shape="-7.20,-1.60 -4.75,-1.95 -3.00,-3.00 -1.95,-4.75 -1.60,-7.20"/>
+    </edge>
+    <edge id=":intersection_7" function="internal">
+        <lane id=":intersection_7_0" index="0" speed="14.00" length="14.40" shape="-7.20,-1.60 7.20,-1.60"/>
+    </edge>
+
+    <edge id="road_hrz_1" from="end_hrz_1" to="intersection" priority="-1" length="1000.00">
+        <lane id="road_hrz_1_0" index="0" speed="14.00" length="1000.00" shape="-1000.00,-1.60 -7.20,-1.60"/>
+    </edge>
+    <edge id="road_hrz_2" from="intersection" to="end_hrz_2" priority="-1" length="1000.00">
+        <lane id="road_hrz_2_0" index="0" speed="14.00" length="1000.00" shape="7.20,-1.60 1000.00,-1.60"/>
+    </edge>
+    <edge id="road_hrz_3" from="end_hrz_2" to="intersection" priority="-1" length="1000.00">
+        <lane id="road_hrz_3_0" index="0" speed="14.00" length="1000.00" shape="1000.00,1.60 7.20,1.60"/>
+    </edge>
+    <edge id="road_hrz_4" from="intersection" to="end_hrz_1" priority="-1" length="1000.00">
+        <lane id="road_hrz_4_0" index="0" speed="14.00" length="1000.00" shape="-7.20,1.60 -1000.00,1.60"/>
+    </edge>
+    <edge id="road_ver_1" from="end_ver_1" to="intersection" priority="-1" length="1000.00">
+        <lane id="road_ver_1_0" index="0" speed="14.00" length="1000.00" shape="-1.60,1000.00 -1.60,7.20"/>
+    </edge>
+    <edge id="road_ver_2" from="intersection" to="end_ver_2" priority="-1" length="1000.00">
+        <lane id="road_ver_2_0" index="0" speed="14.00" length="1000.00" shape="-1.60,-7.20 -1.60,-1000.00"/>
+    </edge>
+    <edge id="road_ver_3" from="end_ver_2" to="intersection" priority="-1" length="1000.00">
+        <lane id="road_ver_3_0" index="0" speed="14.00" length="1000.00" shape="1.60,-1000.00 1.60,-7.20"/>
+    </edge>
+    <edge id="road_ver_4" from="intersection" to="end_ver_1" priority="-1" length="1000.00">
+        <lane id="road_ver_4_0" index="0" speed="14.00" length="1000.00" shape="1.60,7.20 1.60,1000.00"/>
+    </edge>
+
+    <tlLogic id="intersection" type="static" programID="0" offset="0">
+        <phase duration="42" state="GGrrGGrr"/>
+        <phase duration="3"  state="yyrryyrr"/>
+        <phase duration="42" state="rrGGrrGG"/>
+        <phase duration="3"  state="rryyrryy"/>
+    </tlLogic>
+
+    <junction id="end_hrz_1" type="dead_end" x="-1000.00" y="0.00" incLanes="road_hrz_4_0" intLanes="" shape="-1000.00,0.00 -1000.00,3.20 -1000.00,0.00"/>
+    <junction id="end_hrz_2" type="dead_end" x="1000.00" y="0.00" incLanes="road_hrz_2_0" intLanes="" shape="1000.00,0.00 1000.00,-3.20 1000.00,0.00"/>
+    <junction id="end_ver_1" type="dead_end" x="0.00" y="1000.00" incLanes="road_ver_4_0" intLanes="" shape="0.00,1000.00 3.20,1000.00 0.00,1000.00"/>
+    <junction id="end_ver_2" type="dead_end" x="0.00" y="-1000.00" incLanes="road_ver_2_0" intLanes="" shape="0.00,-1000.00 -3.20,-1000.00 0.00,-1000.00"/>
+    <junction id="intersection" type="traffic_light" x="0.00" y="0.00" incLanes="road_ver_1_0 road_hrz_3_0 road_ver_3_0 road_hrz_1_0" intLanes=":intersection_0_0 :intersection_1_0 :intersection_2_0 :intersection_3_0 :intersection_4_0 :intersection_5_0 :intersection_6_0 :intersection_7_0" shape="-3.20,7.20 3.20,7.20 3.64,4.98 4.20,4.20 4.98,3.64 5.98,3.31 7.20,3.20 7.20,-3.20 4.98,-3.64 4.20,-4.20 3.64,-4.98 3.31,-5.98 3.20,-7.20 -3.20,-7.20 -3.64,-4.98 -4.20,-4.20 -4.98,-3.64 -5.98,-3.31 -7.20,-3.20 -7.20,3.20 -4.98,3.64 -4.20,4.20 -3.64,4.98 -3.31,5.98">
+        <request index="0" response="00000000" foes="00001000" cont="0"/>
+        <request index="1" response="00000000" foes="11001000" cont="0"/>
+        <request index="2" response="00000000" foes="00100000" cont="0"/>
+        <request index="3" response="00000000" foes="00100011" cont="0"/>
+        <request index="4" response="00000000" foes="10000000" cont="0"/>
+        <request index="5" response="00000000" foes="10001100" cont="0"/>
+        <request index="6" response="00000000" foes="00000010" cont="0"/>
+        <request index="7" response="00000000" foes="00110010" cont="0"/>
+    </junction>
+
+    <connection from="road_hrz_1" to="road_ver_2" fromLane="0" toLane="0" pass="1" via=":intersection_6_0" tl="intersection" linkIndex="6" dir="r" state="O"/>
+    <connection from="road_hrz_1" to="road_hrz_2" fromLane="0" toLane="0" pass="1" via=":intersection_7_0" tl="intersection" linkIndex="7" dir="s" state="O"/>
+    <connection from="road_hrz_3" to="road_ver_4" fromLane="0" toLane="0" pass="1" via=":intersection_2_0" tl="intersection" linkIndex="2" dir="r" state="O"/>
+    <connection from="road_hrz_3" to="road_hrz_4" fromLane="0" toLane="0" pass="1" via=":intersection_3_0" tl="intersection" linkIndex="3" dir="s" state="O"/>
+    <connection from="road_ver_1" to="road_hrz_4" fromLane="0" toLane="0" via=":intersection_0_0" tl="intersection" linkIndex="0" dir="r" state="O"/>
+    <connection from="road_ver_1" to="road_ver_2" fromLane="0" toLane="0" via=":intersection_1_0" tl="intersection" linkIndex="1" dir="s" state="O"/>
+    <connection from="road_ver_3" to="road_hrz_2" fromLane="0" toLane="0" via=":intersection_4_0" tl="intersection" linkIndex="4" dir="r" state="O"/>
+    <connection from="road_ver_3" to="road_ver_4" fromLane="0" toLane="0" via=":intersection_5_0" tl="intersection" linkIndex="5" dir="s" state="O"/>
+
+    <connection from=":intersection_0" to="road_hrz_4" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":intersection_1" to="road_ver_2" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":intersection_2" to="road_ver_4" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":intersection_3" to="road_hrz_4" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":intersection_4" to="road_hrz_2" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":intersection_5" to="road_ver_4" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":intersection_6" to="road_ver_2" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":intersection_7" to="road_hrz_2" fromLane="0" toLane="0" dir="s" state="M"/>
+
+</net>
