@@ -8,4 +8,6 @@ The vehicles then use Root Parallel Monte Carlo Tree Search to find the optimal 
 If two vehicles are on a collision trajectory, the one which is lower in the passing order will slow down to give way.
 The optimal passing order is that in which the least amount of adjustments need to be made by vehicles to avoid collisions, thereby minimising traffic delay at the intersection while avoiding collisions.
 
+#### [Link to dissertation](https://www.scss.tcd.ie/publications/theses/diss/2021/TCD-SCSS-DISSERTATION-2021-075.pdf)
+
 ![demo](img/demo.gif)
